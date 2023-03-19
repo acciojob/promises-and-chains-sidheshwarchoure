@@ -32,25 +32,4 @@ btn.addEventListener('click', (event) => {
   });
 });
 
-function myPromise() {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve({
-          name: 'John',
-          age: 25
-        });
-      }, 4000);
-    })
-    .then(obj => {
-      return obj.age;
-    })
-    .then(age => {
-      return {
-        welcomeMessage: `Welcome, John. You are ${age} years old.`
-      };
-    });
-  }
-  
-  myPromise().then(data => {
-    alert(data.welcomeMessage);
-  });
+
