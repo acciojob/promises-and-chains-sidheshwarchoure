@@ -11,7 +11,7 @@ btn.addEventListener('click', (event) => {
   const name = nameInput.value;
   
   if (isNaN(age) || age < 1 || name.trim() === '') {
-    alert('Please fill out both fields.');
+    alert('Please enter valid details');
     return;
   }
   
